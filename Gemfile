@@ -90,5 +90,14 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+#HEROKU NUEVO !!!!!!!!!!!!!
+group :production do
+  
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+#HEROKU NUEVO!!!!!!!!!!!!!!!
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
