@@ -48,7 +48,8 @@ gem "best_in_place", "~> 3.0.1"
 
 #perperclip subir archivos
 
-gem "paperclip" ,"~> 5.0.0beta1"
+gem "paperclip" ,git: "git://github.com/thoughtbot/paperclip.git"
+gem 'aws-sdk','~> 2'
 
 #remotipart to submit images by AYAX
 gem "remotipart", github:"urielhdz/remotipart"
