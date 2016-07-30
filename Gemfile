@@ -7,6 +7,7 @@ gem 'rails', '~> 5.0.0'
 #gem 'railties', '~> 5.0.0.beta2'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'   Heroku
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheetscccccccccccccccccccccccccccccccccccccccccccccccccccccdfddds
@@ -81,7 +82,7 @@ group :development, :test do
 end
 
 group :development do
-	gem 'sqlite3'
+	
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
@@ -91,11 +92,7 @@ group :development do
 end
 
 #HEROKU
-group :production do
-  
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
-end
+
 #HEROKU
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
