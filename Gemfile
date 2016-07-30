@@ -7,7 +7,7 @@ gem 'rails', '~> 5.0.0'
 #gem 'railties', '~> 5.0.0.beta2'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'   Heroku
-gem 'pg'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheetscccccccccccccccccccccccccccccccccccccccccccccccccccccdfddds
@@ -93,6 +93,9 @@ group :development do
 end
 
 #HEROKU
+group :production do
+  gem 'pg', '0.12.2'
+end
 
 #HEROKU
 
